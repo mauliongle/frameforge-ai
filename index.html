@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameForge AI — AI-Powered Video Editing & Clip Generation</title>
+    <meta name="description" content="FrameForge AI is a next-generation video editing software powered by artificial intelligence. Smart editing, AI clip generation, and cinematic results in minutes.">
+    <meta name="keywords" content="AI video editing, clip generation, video editor, AI editing software, FrameForge">
+    <meta name="author" content="FrameForge AI">
+    <meta property="og:title" content="FrameForge AI — AI-Powered Video Editing">
+    <meta property="og:description" content="Edit smarter. Create faster. Let AI transform your video workflow.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--3" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">
+                <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="6" width="28" height="20" rx="3" stroke="url(#logoGrad)" stroke-width="2"/>
+                    <polygon points="13,11 13,21 22,16" fill="url(#logoGrad)"/>
+                    <circle cx="26" cy="9" r="3" fill="#a78bfa" opacity="0.8"/>
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#a78bfa"/>
+                            <stop offset="100%" stop-color="#6366f1"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>FrameForge<span class="nav__logo-ai">AI</span></span>
+            </a>
+            <div class="nav__links" id="navLinks">
+                <a href="#features" class="nav__link">Features</a>
+                <a href="#how-it-works" class="nav__link">How It Works</a>
+                <a href="#showcase" class="nav__link">Showcase</a>
+                <a href="#pricing" class="nav__link">Pricing</a>
+                <a href="#faq" class="nav__link">FAQ</a>
+            </div>
+            <div class="nav__actions">
+                <a href="#cta" class="btn btn--primary btn--sm">Get Started Free</a>
+                <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__badge" data-animate="fade-up">
+                <span class="hero__badge-dot"></span>
+                Now in Public Beta — Try Free
+            </div>
+            <h1 class="hero__title" data-animate="fade-up" data-delay="100">
+                Edit Smarter.<br>
+                <span class="hero__title-gradient">Create Faster.</span>
+            </h1>
+            <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+                FrameForge AI is the next-generation video editing software that uses artificial intelligence to automate editing, generate viral clips, and deliver cinematic results — in minutes, not hours.
+            </p>
+            <div class="hero__ctas" data-animate="fade-up" data-delay="300">
+                <a href="#cta" class="btn btn--primary btn--lg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polygon points="6,3 6,17 17,10" fill="currentColor"/></svg>
+                    Start Editing Free
+                </a>
+                <a href="#showcase" class="btn btn--ghost btn--lg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><polygon points="8,6 8,14 15,10" fill="currentColor"/></svg>
+                    Watch Demo
+                </a>
+            </div>
+            <div class="hero__stats" data-animate="fade-up" data-delay="400">
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="10">0</span><span class="hero__stat-suffix">x</span>
+                    <span class="hero__stat-label">Faster Editing</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="50">0</span><span class="hero__stat-suffix">K+</span>
+                    <span class="hero__stat-label">Clips Generated</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="4.9">0</span><span class="hero__stat-suffix">★</span>
+                    <span class="hero__stat-label">User Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__image-wrapper" data-animate="fade-up" data-delay="500">
+            <div class="hero__image-glow"></div>
+            <img src="images/hero-screenshot.png" alt="FrameForge AI video editing interface" class="hero__image" loading="eager">
+            <div class="hero__image-reflection"></div>
+        </div>
+    </header>
+
+    <!-- Logos / Social Proof -->
+    <section class="logos" data-animate="fade-up">
+        <p class="logos__text">Trusted by creators from</p>
+        <div class="logos__track">
+            <div class="logos__slide">
+                <span class="logos__item">YouTube</span>
+                <span class="logos__item">TikTok</span>
+                <span class="logos__item">Instagram</span>
+                <span class="logos__item">Twitch</span>
+                <span class="logos__item">Netflix</span>
+                <span class="logos__item">Spotify</span>
+                <span class="logos__item">YouTube</span>
+                <span class="logos__item">TikTok</span>
+                <span class="logos__item">Instagram</span>
+                <span class="logos__item">Twitch</span>
+                <span class="logos__item">Netflix</span>
+                <span class="logos__item">Spotify</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section__container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__tag">Features</span>
+                <h2 class="section__title">Everything You Need.<br><span class="gradient-text">Nothing You Don't.</span></h2>
+                <p class="section__desc">Powerful AI tools that handle the heavy lifting, so you can focus on the creative vision.</p>
+            </div>
+            <div class="features__grid">
+                <div class="feature-card feature-card--large" data-animate="fade-up" data-delay="100">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="4" y="8" width="40" height="28" rx="4" stroke="url(#f1)" stroke-width="2.5"/>
+                            <path d="M4 16h40" stroke="url(#f1)" stroke-width="2"/>
+                            <rect x="8" y="20" width="12" height="12" rx="2" fill="url(#f1)" opacity="0.3"/>
+                            <path d="M24 20h16M24 26h12M24 32h8" stroke="url(#f1)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="38" cy="12" r="3" fill="#a78bfa"/>
+                            <defs><linearGradient id="f1" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">AI Smart Editor</h3>
+                    <p class="feature-card__desc">Intelligent timeline editing that understands your content. Auto-cut silence, detect scenes, and arrange clips with a single click.</p>
+                    <img src="images/feature-editing.png" alt="AI Smart Editor feature" class="feature-card__preview" loading="lazy">
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="6" y="6" width="14" height="14" rx="3" stroke="url(#f2)" stroke-width="2.5"/>
+                            <rect x="28" y="6" width="14" height="14" rx="3" stroke="url(#f2)" stroke-width="2.5"/>
+                            <rect x="6" y="28" width="14" height="14" rx="3" stroke="url(#f2)" stroke-width="2.5"/>
+                            <rect x="28" y="28" width="14" height="14" rx="3" fill="url(#f2)" opacity="0.3" stroke="url(#f2)" stroke-width="2.5"/>
+                            <path d="M22 13h4M13 22v4M35 22v4M22 35h4" stroke="url(#f2)" stroke-width="2" stroke-linecap="round"/>
+                            <defs><linearGradient id="f2" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#f472b6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Clip Generation</h3>
+                    <p class="feature-card__desc">Drop in a long video and let AI find the best moments. Generate viral-ready shorts, highlights, and reels automatically.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="url(#f3)" stroke-width="2.5"/>
+                            <path d="M24 6c0 10-8 14-8 18s3.5 8 8 8 8-4 8-8-8-8-8-18z" fill="url(#f3)" opacity="0.2"/>
+                            <circle cx="24" cy="24" r="6" fill="url(#f3)" opacity="0.6"/>
+                            <defs><linearGradient id="f3" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">AI Color Grading</h3>
+                    <p class="feature-card__desc">Professional color grading powered by AI. Match cinematic looks, auto-correct exposure, and apply film-quality LUTs instantly.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M8 36l10-12 8 6 14-18" stroke="url(#f4)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="8" cy="36" r="3" fill="url(#f4)"/>
+                            <circle cx="18" cy="24" r="3" fill="url(#f4)"/>
+                            <circle cx="26" cy="30" r="3" fill="url(#f4)"/>
+                            <circle cx="40" cy="12" r="3" fill="url(#f4)"/>
+                            <defs><linearGradient id="f4" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#34d399"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Smart Transitions</h3>
+                    <p class="feature-card__desc">AI-powered transitions that match your video's mood and pacing. Smooth cuts, dynamic zooms, and cinematic effects.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="url(#f5)" stroke-width="2.5"/>
+                            <path d="M16 28h16M20 22h8" stroke="url(#f5)" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M18 8l2 4M30 8l-2 4" stroke="url(#f5)" stroke-width="2" stroke-linecap="round"/>
+                            <defs><linearGradient id="f5" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Auto Captions</h3>
+                    <p class="feature-card__desc">Generate accurate captions in 50+ languages. Animated subtitles with customizable styles that boost engagement.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14z" stroke="url(#f6)" stroke-width="2.5" fill="url(#f6)" fill-opacity="0.15"/>
+                            <defs><linearGradient id="f6" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#c084fc"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">One-Click Export</h3>
+                    <p class="feature-card__desc">Export in any format, resolution, or aspect ratio. Optimized presets for YouTube, TikTok, Instagram, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section__container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__tag">How It Works</span>
+                <h2 class="section__title">Three Steps to<br><span class="gradient-text">Stunning Videos</span></h2>
+                <p class="section__desc">No learning curve. No complexity. Just results.</p>
+            </div>
+            <div class="steps">
+                <div class="step" data-animate="fade-up" data-delay="100">
+                    <div class="step__number">01</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Import Your Footage</h3>
+                        <p class="step__desc">Drag and drop any video file. FrameForge AI instantly analyzes your content — detecting scenes, speakers, emotions, and key moments.</p>
+                    </div>
+                    <div class="step__visual">
+                        <div class="step__icon-wrapper">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <rect x="12" y="20" width="40" height="28" rx="4" stroke="url(#s1)" stroke-width="2.5" stroke-dasharray="6 4"/>
+                                <path d="M32 28v12M26 34h12" stroke="url(#s1)" stroke-width="2.5" stroke-linecap="round"/>
+                                <path d="M24 16l8-8 8 8" stroke="url(#s1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs><linearGradient id="s1" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" data-animate="fade-up" data-delay="200">
+                    <div class="step__number">02</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Let AI Do the Work</h3>
+                        <p class="step__desc">Choose your style — quick cuts, cinematic flow, or viral format. AI edits, color grades, adds transitions and captions automatically.</p>
+                    </div>
+                    <div class="step__visual">
+                        <div class="step__icon-wrapper">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <circle cx="32" cy="32" r="20" stroke="url(#s2)" stroke-width="2.5"/>
+                                <path d="M32 12a20 20 0 0 1 14 34" stroke="#a78bfa" stroke-width="3" stroke-linecap="round">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 32 32" to="360 32 32" dur="3s" repeatCount="indefinite"/>
+                                </path>
+                                <circle cx="32" cy="32" r="8" fill="url(#s2)" opacity="0.3"/>
+                                <circle cx="32" cy="32" r="3" fill="#a78bfa"/>
+                                <defs><linearGradient id="s2" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#f472b6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" data-animate="fade-up" data-delay="300">
+                    <div class="step__number">03</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Export & Share</h3>
+                        <p class="step__desc">Preview, fine-tune if needed, and export in 4K. Share directly to YouTube, TikTok, Instagram, or download to your device.</p>
+                    </div>
+                    <div class="step__visual">
+                        <div class="step__icon-wrapper">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <rect x="8" y="14" width="48" height="36" rx="4" stroke="url(#s3)" stroke-width="2.5"/>
+                                <polygon points="26,24 26,40 42,32" fill="url(#s3)" opacity="0.6"/>
+                                <path d="M16 54l6-4 6 2 6-3 6 1 6-2 6 3" stroke="url(#s3)" stroke-width="2" stroke-linecap="round"/>
+                                <defs><linearGradient id="s3" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase / Bento Grid -->
+    <section class="showcase" id="showcase">
+        <div class="section__container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__tag">Showcase</span>
+                <h2 class="section__title">See It<br><span class="gradient-text">In Action</span></h2>
+                <p class="section__desc">Real results from real creators using FrameForge AI.</p>
+            </div>
+            <div class="bento" data-animate="fade-up" data-delay="100">
+                <div class="bento__item bento__item--wide">
+                    <img src="images/hero-screenshot.png" alt="FrameForge AI full editor view" loading="lazy">
+                    <div class="bento__overlay">
+                        <span class="bento__label">Full Editor View</span>
+                    </div>
+                </div>
+                <div class="bento__item">
+                    <img src="images/feature-clips.png" alt="AI Clip Generation" loading="lazy">
+                    <div class="bento__overlay">
+                        <span class="bento__label">AI Clip Generation</span>
+                    </div>
+                </div>
+                <div class="bento__item">
+                    <img src="images/feature-editing.png" alt="Smart Editing Features" loading="lazy">
+                    <div class="bento__overlay">
+                        <span class="bento__label">Smart Editing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section__container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__tag">Testimonials</span>
+                <h2 class="section__title">Loved by<br><span class="gradient-text">Creators Everywhere</span></h2>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">"FrameForge AI cut my editing time from 6 hours to 30 minutes. The clip generation feature alone is worth it — I've tripled my content output."</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">AK</div>
+                        <div>
+                            <div class="testimonial__name">Alex Kim</div>
+                            <div class="testimonial__role">YouTube Creator • 250K Subs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">"The AI color grading is insane. It matched the exact cinematic look I wanted on the first try. No more spending hours tweaking LUTs."</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">SR</div>
+                        <div>
+                            <div class="testimonial__name">Sarah Rivera</div>
+                            <div class="testimonial__role">Filmmaker & Director</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial" data-animate="fade-up" data-delay="300">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">"I went from zero editing skills to posting daily Reels and TikToks. FrameForge AI is like having a professional editor on my team 24/7."</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">MJ</div>
+                        <div>
+                            <div class="testimonial__name">Marcus Johnson</div>
+                            <div class="testimonial__role">Social Media Manager</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="section__container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__tag">Pricing</span>
+                <h2 class="section__title">Simple, Transparent<br><span class="gradient-text">Pricing</span></h2>
+                <p class="section__desc">Start free. Upgrade when you're ready.</p>
+            </div>
+            <div class="pricing__grid">
+                <div class="pricing-card" data-animate="fade-up" data-delay="100">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name">Starter</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">Free</span>
+                        </div>
+                        <p class="pricing-card__desc">Perfect for trying things out</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>5 AI edits per month</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>720p export</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Basic clip generation</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Auto captions</li>
+                    </ul>
+                    <a href="#cta" class="btn btn--ghost btn--full">Get Started</a>
+                </div>
+                <div class="pricing-card pricing-card--featured" data-animate="fade-up" data-delay="200">
+                    <div class="pricing-card__badge">Most Popular</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name">Pro</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">$</span>
+                            <span class="pricing-card__amount">19</span>
+                            <span class="pricing-card__period">/mo</span>
+                        </div>
+                        <p class="pricing-card__desc">For serious creators</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Unlimited AI edits</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>4K export</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Advanced clip generation</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>AI color grading</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Smart transitions</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Priority support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn--primary btn--full">Start Pro Trial</a>
+                </div>
+                <div class="pricing-card" data-animate="fade-up" data-delay="300">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name">Enterprise</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">Custom</span>
+                        </div>
+                        <p class="pricing-card__desc">For teams & studios</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Everything in Pro</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Team collaboration</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>API access</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Custom AI models</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Dedicated support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn--ghost btn--full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="section__container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__tag">FAQ</span>
+                <h2 class="section__title">Questions?<br><span class="gradient-text">We've Got Answers.</span></h2>
+            </div>
+            <div class="faq__list" data-animate="fade-up" data-delay="100">
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        What makes FrameForge AI different from other video editors?
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </summary>
+                    <div class="faq__answer">FrameForge AI is built from the ground up with AI at its core — not as an afterthought. Our AI understands your content contextually, making intelligent editing decisions that would take hours manually. From auto-detecting the best moments for clips to matching cinematic color grades, every feature is designed to save time while delivering professional results.</div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Do I need video editing experience?
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </summary>
+                    <div class="faq__answer">Not at all! FrameForge AI is designed for everyone — from complete beginners to professional editors. The AI handles the technical complexity while you focus on your creative vision. Beginners can let AI do everything, while pros can fine-tune every detail.</div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        What video formats are supported?
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </summary>
+                    <div class="faq__answer">FrameForge AI supports all major video formats including MP4, MOV, AVI, MKV, WebM, and more. You can export in any format with custom resolution, bitrate, and codec settings. We also offer optimized presets for every major platform.</div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Is my footage processed locally or in the cloud?
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </summary>
+                    <div class="faq__answer">FrameForge AI uses a hybrid approach. Light processing and preview rendering happen locally for speed, while heavy AI tasks (like clip generation and advanced color grading) leverage our cloud infrastructure for maximum performance. Your footage is encrypted end-to-end and never stored permanently on our servers.</div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Can I cancel my subscription anytime?
+                        <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </summary>
+                    <div class="faq__answer">Absolutely. No contracts, no commitments. You can cancel your subscription at any time and continue using FrameForge AI until the end of your billing period. Your projects and exports are always yours to keep.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="section__container">
+            <div class="cta__card" data-animate="fade-up">
+                <div class="cta__glow"></div>
+                <h2 class="cta__title">Ready to Transform Your<br><span class="gradient-text">Video Workflow?</span></h2>
+                <p class="cta__desc">Join thousands of creators already using FrameForge AI to create stunning content in minutes.</p>
+                <div class="cta__form">
+                    <input type="email" class="cta__input" placeholder="Enter your email address" id="ctaEmail" aria-label="Email address">
+                    <button class="btn btn--primary btn--lg" id="ctaButton">Get Early Access</button>
+                </div>
+                <p class="cta__note">Free to start • No credit card required • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="nav__logo">
+                        <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none">
+                            <rect x="2" y="6" width="28" height="20" rx="3" stroke="url(#logoGrad2)" stroke-width="2"/>
+                            <polygon points="13,11 13,21 22,16" fill="url(#logoGrad2)"/>
+                            <circle cx="26" cy="9" r="3" fill="#a78bfa" opacity="0.8"/>
+                            <defs>
+                                <linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#a78bfa"/>
+                                    <stop offset="100%" stop-color="#6366f1"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>FrameForge<span class="nav__logo-ai">AI</span></span>
+                    </a>
+                    <p class="footer__tagline">AI-powered video editing for the modern creator.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#showcase">Showcase</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 FrameForge AI. All rights reserved.</p>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Twitter" class="footer__social">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" aria-label="GitHub" class="footer__social">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="footer__social">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
